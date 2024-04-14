@@ -4,96 +4,47 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Flex Align-Items</title>
+  <title>Flex - Flex-Grow</title>
 
-  <link rel="stylesheet" href="./css/flex-container/flex-align-items.css">
+  <link rel="stylesheet" href="./css/flex-item/flex-grow.css">
 </head>
 
 <body>
-  <h1>align-items: stretch;</h1>
-  <section class="container stretch">
-    <div class="item">1</div>
-    <div class="item">Teste 2 do Item</div>
-    <div class="item">Teste 3 do Item Agora Mesmo</div>
-    <div class="item">Teste 4</div>
-  </section>
 
-  <h1>align-items: flex-start;</h1>
-  <section class="container flex-start">
-    <div class="item">1</div>
-    <div class="item">Teste 2 do Item</div>
-    <div class="item">Teste 3 do Item Agora Mesmo</div>
-    <div class="item">Teste 4</div>
-  </section>
-
-  <h1>align-items: flex-end;</h1>
-  <section class="container flex-end">
-    <div class="item">1</div>
-    <div class="item">Teste 2 do Item</div>
-    <div class="item">Teste 3 do Item Agora Mesmo</div>
-    <div class="item">Teste 4</div>
-  </section>
-
-  <h1>align-items: center;</h1>
-  <section class="container center">
-    <div class="item">1</div>
-    <div class="item">Teste 2 do Item</div>
-    <div class="item">Teste 3 do Item Agora Mesmo</div>
-    <div class="item">Teste 4</div>
-  </section>
-
-  <h1>align-items: baseline;</h1>
-  <section class="container baseline">
-    <div class="item teste">1</div>
-    <div class="item">Teste 2 do Item</div>
-    <div class="item">Teste 3 do Item Agora Mesmo</div>
-    <div class="item">Teste 4</div>
-  </section>
-
-  <h1>align-items: flex-stretch; // column</h1>
-  <section class="container stretch column">
-    <div class="item">1</div>
-    <div class="item">Teste 2 do Item</div>
-    <div class="item">Teste 3 do Item Agora Mesmo</div>
-    <div class="item">Teste 4</div>
-  </section>
-
-  <h1>align-items: flex-start; // column</h1>
-  <section class="container flex-start column">
-    <div class="item">1</div>
-    <div class="item">Teste 2 do Item</div>
-    <div class="item">Teste 3 do Item Agora Mesmo</div>
-    <div class="item">Teste 4</div>
-  </section>
-
-  <h1>align-items: flex-end; // column</h1>
-  <section class="container flex-end column">
-    <div class="item">1</div>
-    <div class="item">Teste 2 do Item</div>
-    <div class="item">Teste 3 do Item Agora Mesmo</div>
-    <div class="item">Teste 4</div>
-  </section>
-
-  <h1>align-items: center; // column</h1>
-  <section class="container center column">
-    <div class="item">1</div>
-    <div class="item">Teste 2 do Item</div>
-    <div class="item">Teste 3 do Item Agora Mesmo</div>
-    <div class="item">Teste 4</div>
-  </section>
-
-  <h1>align-items: baseline; // column</h1>
-  <section class="container baseline column">
-    <div class="item teste">1</div>
-    <div class="item">Teste 2 do Item</div>
-    <div class="item">Teste 3 do Item Agora Mesmo</div>
-    <div class="item">Teste 4</div>
-  </section>
-
-  <h1>align-items: center; e justfy-content: center;</h1>
-  <section class="container alinhamento-central">
-    <div class="item">Esse item está verticalmente alinhado ao centro.</div>
-  </section>
 </body>
+<h1>flex-grow: 0;</h1>
+<section class="container">
+  <div class="item grow0">1</div>
+  <div class="item grow0">2</div>
+  <div class="item grow0">3</div>
+</section>
+
+<h1>flex-grow: 1;</h1>
+<section class="container">
+  <div class="item grow1">1</div>
+  <div class="item grow1">2</div>
+  <div class="item grow1">3</div>
+</section>
+
+<h1>flex-grow: 2;</h1>
+<section class="container column">
+  <div class="item grow2">1</div>
+  <div class="item grow2">2</div>
+  <div class="item grow2">3</div>
+</section>
+
+<h1>flex-grow: 1; // conteúdo largo</h1>
+<section class="container column-reverse">
+  <div class="item grow1">1</div>
+  <div class="item grow1">TestandoTestando2</div>
+  <div class="item grow1">3</div>
+</section>
+
+<h1>flex-grow: (misturado);</h1>
+<section class="container column-reverse">
+  <div class="item grow0">1</div>
+  <div class="item grow1">2</div>
+  <div class="item grow2">3</div>
+</section>
 
 </html>

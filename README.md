@@ -6,4 +6,4 @@
 >
 > ### - Flex Itens: Alinhamento dos itens
 
-### Observação: Cada arquivo html tem seu arquivo css dentro de cada pasta com o mesmo nome
+### Observação: Cada arquivo html tem seu arquivo css dentro de cada pasta (flex-container e flex-itens) com o mesmo nome
